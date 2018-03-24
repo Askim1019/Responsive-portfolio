@@ -233,8 +233,176 @@ form textarea {
     padding-top: 15px;
     position: fixed;
     bottom: 0;
+    z-index: 2;
 }
 
 #sticky p {
     color: white;
+}
+
+@media screen and (max-width: 980px) {
+
+    .left-div{
+        margin-left: 15px;
+    }
+
+    .right-div {
+        margin-right: 15px;
+    }
+
+    .container {
+        margin-bottom: 150px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-container {
+        width: 650px;
+    }
+
+    .container {
+        width: 650px;
+    }
+
+    hr {
+        width: 620px;
+        border-color: #ccc;
+        border-width: 1px;
+        border-style: solid;
+    }
+
+    .left-div {
+        width: 100%;
+        display: block;
+        background-color: white;
+        margin-bottom: 35px;
+        margin-left: 0;
+    }
+    
+    .contact-container {
+        width: 600px;
+    }
+
+    .right-div {
+        width: 100%;
+        clear: both;
+        display: block;
+        margin-right: 0;
+    }
+
+    .social ul {
+        text-align: left;
+        margin-top: 35px;
+        margin-bottom: 35px;
+        margin-left: 20px;
+    }
+    
+
+}
+
+@media screen and (max-width: 640px) {
+    header {
+        position: static;
+    }
+
+    .nav-container {
+         width: 640px;
+    }
+
+    .logo {
+        display: block;
+        width: 640px;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    nav {
+        width: 640px;
+        float: none;
+        text-align: center;
+        height: 100%;
+    }
+
+    nav ul {
+        clear: both;
+        display: block;
+    }
+    
+    nav li {
+        display: inline-block;
+        margin-left: 0;
+        padding: 25px 0;
+        width: 210px;
+    }
+    
+    nav li:hover {
+        background-color: #4aaaa5;
+    }
+    
+    
+    nav a {
+        text-decoration: none;
+        color: #a9a9a9;
+    }
+    
+    nav a:hover {
+        color: white;
+    }
+
+    .container {
+        width: 550px;
+    }
+
+    hr {
+        width: 520px;
+        border-color: #ccc;
+        border-width: 1px;
+        border-style: solid;
+    }
+
+    .row {
+        margin: 8px auto;
+        display: block;
+        position: relative;
+    }
+    
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    .column {
+        padding: 8px;
+        width: 100%;
+        float: none;
+    }
+    
+    .content {
+        text-align: center;
+    }
+    
+    .content h2 {
+        width: 400px;
+        background-color: #4aaaa5;
+        padding: 15px 0;
+        position: relative;
+        margin: 0 auto;
+        bottom: 65px;
+        z-index: 1;
+        color: white;
+    }
+
+    .port-img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .contact-container {
+        position: relative;
+    }
+
+    .left-div {
+
+    }
 }
